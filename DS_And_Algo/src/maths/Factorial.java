@@ -5,18 +5,21 @@ import java.util.Map;
 
 public class Factorial {
 	
-	static Map<Integer, Integer> cache = new HashMap<>();
+	//static Map<Integer, Integer> cache = new HashMap<>();
+	static long[] cache;
 	public static void main(String[] args) {
-		int n = 10;
+		int n = 15;
+		cache = new long[n+1];
+		cache[0] = 1;
 		long start1 = System.nanoTime();
-		int ans = findFactorial(n);
+		long ans = findFactorial(n);
 	    long end1 = System.nanoTime(); 
 		
 		System.out.println("Factorial of "+ n+" is: "+ ans);
 		System.out.println("Elapsed Time in nano seconds: "+ (end1-start1));
 		
 		long start2 = System.nanoTime();
-		int ans2 = findFactorialWithoutCache(n);
+		long ans2 = findFactorialWithoutCache(n);
 	    long end2 = System.nanoTime(); 
 	    
 	    System.out.println("Factorial of "+ n+" is: "+ ans2);
@@ -24,26 +27,21 @@ public class Factorial {
 		
 	}
 
-	private static int findFactorial(int n) {
+	private static long findFactorial(long n) {
 		
 		if(n==0 || n==1) {
 			return 1;
 		}
-		
-		if(cache.containsKey(n)) {
-			return cache.get(n);
+		int last = 0;
+		while(last<n) {
+			cache[last+1] = cache[last] * (last+1);
+			last++;
 		}
 		
-		int temp = n*findFactorial(n-1);
-		
-		cache.put(n, temp);
-		
-		
-		
-		return temp;
+		return cache[(int)n];
 	}
 	
-	private static int findFactorialWithoutCache(int n) {
+	private static long findFactorialWithoutCache(long n) {
 		if( n==0 || n==1) {
 			return 1;
 		}
