@@ -8,7 +8,7 @@ public class Factorial {
 	//static Map<Integer, Integer> cache = new HashMap<>();
 	static long[] cache;
 	public static void main(String[] args) {
-		int n = 15;
+		int n =  10;
 		cache = new long[n+1];
 		cache[0] = 1;
 		long start1 = System.nanoTime();
