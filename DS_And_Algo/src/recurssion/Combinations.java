@@ -9,7 +9,7 @@ public class Combinations {
 		
 		
 		ArrayList<Integer> result = new ArrayList<>();
-		int a = 1;
+		int a = 4;
 		int b = 2;
 		
 		if(a<b) {
