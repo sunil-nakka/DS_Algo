@@ -14,5 +14,11 @@ public class ArrayUtils {
         }
         System.out.println();
     }
+    
+    public static void printArray(int[] arr, String logMessgae) {
+    	
+    	System.out.println(logMessgae);
+    	printArray(arr);
+    }
 
 }
