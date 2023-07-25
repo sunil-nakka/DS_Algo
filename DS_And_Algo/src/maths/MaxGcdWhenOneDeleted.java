@@ -1,7 +1,9 @@
 package maths;
 
 public class MaxGcdWhenOneDeleted {
-
+	
+	// Find Max GCD when one of the element is removed.
+	
 	public static void main(String[] args) {
 
 		MaxGcdWhenOneDeleted obj = new MaxGcdWhenOneDeleted();
