@@ -4,7 +4,7 @@ public class Sqrt {
 
 	public static void main(String[] args) {
 		
-		int num = 45;
+		int num = 2;
 		int result = findSqrt(num);  
 		System.out.println(result);
 		/*
