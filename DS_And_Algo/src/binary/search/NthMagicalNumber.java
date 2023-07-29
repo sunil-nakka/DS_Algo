@@ -7,8 +7,7 @@ public class NthMagicalNumber {
 		
 		NthMagicalNumber obj = new NthMagicalNumber();
 		int ans = obj.solve(19, 11, 14);
-		System.out.println(ans);
-
+		System.out.println("Nth magical number:"+ans);
 	}
 	
 	int mod = 1000000000+7;

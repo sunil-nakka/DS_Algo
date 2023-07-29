@@ -9,7 +9,8 @@ public class Sqrt {
 		System.out.println(result);
 		/*
 		long res = findSqrt_2((long) 10.2);
-		System.out.println(res);*/
+		System.out.println(res);
+		*/
 		
 		long test = (long) 10.5;
 		System.out.println(test);
