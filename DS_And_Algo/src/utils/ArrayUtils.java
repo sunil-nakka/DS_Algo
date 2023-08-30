@@ -2,6 +2,15 @@ package utils;
 
 public class ArrayUtils {
 	
+
+
+    
+    public static void printArray(int[] arr, String logMessgae) {
+    	
+    	System.out.println(logMessgae);
+    	printArray(arr);
+    }
+
 	public static void printArray(int arr[])
 	{
 		if(arr.length == 0)
@@ -20,5 +29,6 @@ public class ArrayUtils {
 		}
 		System.out.println("]");
 	}
+
 
 }
