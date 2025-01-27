@@ -9,7 +9,10 @@ public class Sum3 {
 	        List<List<Integer>> result = threeSum(nums);
 
 	        System.out.println(result);
-	    }
+
+			System.out.println(result);
+
+		}
 
 	    public static List<List<Integer>> threeSum(int[] nums) {
 
