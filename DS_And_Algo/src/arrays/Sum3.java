@@ -10,7 +10,6 @@ public class Sum3 {
 
 	        System.out.println(result);
 
-			System.out.println(result);
 
 		}
 
